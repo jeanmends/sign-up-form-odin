@@ -78,3 +78,60 @@
     margin-top: 20px;
     color: rgb(56, 52, 52);
 }
+
+.rigth-side-main{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 1px 2px 1px #000;
+}
+
+.rigth-side-main h1{
+    margin-top: 20px;
+    color:rgb(63, 66, 68);
+}
+
+.form-div{
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    justify-content: space-between;
+    margin: 20px 0px 0px 0px;
+}
+
+.form-div-line{
+    display: flex;
+    flex-direction: column;
+    
+}
+label{
+    color:rgb(63, 66, 68);
+    font-weight: bolder;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    margin-top: 5px;
+    width: 250px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid black !important;
+    box-shadow: 1px 1px black !important;
+    
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+    border: 1px solid rgb(55, 69, 194) !important;
+    outline: 0;
+    box-shadow: 1px 1px rgb(55, 69, 194) !important;
+}
+
+input[type="text"]:invalid, input[type="email"]:invalid, input[type="password"]:invalid{
+    border: 1px solid rgb(255, 0, 0) !important;
+    outline: 0;
+    box-shadow: 1px 1px rgb(255, 0, 0) !important; 
+}
+
+input[type="text"]:valid, input[type="email"]:valid, input[type="password"]:valid{
+    border: 1px solid rgb(0, 255, 64);
+    outline: 0;
+    box-shadow: 1px 1px rgb(0, 255, 64);
+}
